@@ -1,0 +1,76 @@
+% -----------------------------------------------------
+% Created by Leonardo Mauro <leo.mauro.desenv@gmail.com>
+% Some editions to moderncv
+% option: nopagenumber
+% add: cvtext, cvreference, cvdoublecolumn
+% -----------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{moderncvplus}[2018/04/01 Custom Package]
+
+% -----------------------------------------------------
+% Includes
+% -----------------------------------------------------
+% define values to key
+\usepackage{xkeyval}
+% spacing & formating texts
+\usepackage{xpatch}
+\usepackage{setspace}
+% to numbering pages
+\usepackage{lastpage}
+% multicol to moderncv
+\usepackage{multicol}
+
+% -----------------------------------------------------
+% Options
+% -----------------------------------------------------
+% Add page number 'nopagenumber'
+\newif\if@nopage\@nopagefalse
+\DeclareOption{nopagenumber}{\@nopagetrue}
+
+\DeclareOption{titlemiddle}{
+	\renewcommand*{\namefont}{\fontsize{29}{40}\mdseries\upshape}
+}
+
+\ProcessOptions\relax
+
+% -----------------------------------------------------
+% Traditional LaTeX or TeX follows
+% -----------------------------------------------------
+% -- multicolumn
+\setlength{\hintscolumnwidth}{3cm}
+\setlength{\separatorcolumnwidth}{1em}
+
+% -- cvtext
+\newcommand{\cvtext}[1]{
+	\cvitem[0.75em]{}{#1}
+}
+
+% -- cvdoublecolumn
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[0.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+% -- cvreference
+\newcommand{\cvreference}[6]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{\emailsymbol~\texttt{#5}\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\phonesymbol~#6}}
+
+% -- hide page numbering
+\if@nopage 
+	\nopagenumbers{} % hide
+\else
+    \rfoot{\vspace*{-35pt}\addressfont\itshape\textcolor{gray}{Page \thepage\ of \pageref{LastPage}}} % default
+\fi
+
+% -- end file sty
+
+\endinput
