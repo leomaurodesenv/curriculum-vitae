@@ -1,10 +1,10 @@
 # Curriculum Vitae in Latex #
    
-In this repository, it is stored my curriculum vitae (see in [Overleaf](https://www.overleaf.com/read/mdywzrfcnnwk)).   
-Some additions to *moderncv.sty* in `moderncvplus.sty`.    
-New tags to stylize your curriculum vitae.    
-This is a **public** style, you can edit and share.    
-Enjoy!        
+In this repository, it is stored my curriculum vitae (see in [Overleaf](https://www.overleaf.com/read/pxwngvmqqdcw)).   
+Some additions to *moderncv.sty* in `moderncvplus.sty`.   
+New tags to stylize your curriculum vitae.   
+This is a **public** style, you can edit and share.   
+Enjoy!   
    
 ___   
    
@@ -31,12 +31,12 @@ ___
    
 ## Folders ##
    
-* `latex/`: codes and example.   
+* `latex/`: codes and my curriculum.   
    
 ___   
    
 ## Also look ~  	
-* [License MIT](https://opensource.org/licenses/MIT)
-* Create by Leonardo Mauro (leo.mauro.desenv@gmail.com)
-* Git: [leomaurodesenv](https://github.com/leomaurodesenv/)
-* Site: [Portfolio](http://leonardomauro.com/portfolio/)
+* [License MIT](https://opensource.org/licenses/MIT)   
+* Create by Leonardo Mauro (leo.mauro.desenv@gmail.com)   
+* Git: [leomaurodesenv](https://github.com/leomaurodesenv/)   
+* Site: [Portfolio](http://leonardomauro.com/portfolio/)    
