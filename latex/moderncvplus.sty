@@ -6,7 +6,7 @@
 % -----------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesPackage{moderncvplus}[2018/04/01 Custom Package]
+\ProvidesPackage{moderncvplus}[2019/02/28 Custom Package]
 
 % -----------------------------------------------------
 % Includes
@@ -61,7 +61,7 @@
     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
-    \ifthenelse{\equal{#5}{}}{}{\emailsymbol~\texttt{#5}\newline}%
+    \ifthenelse{\equal{#5}{}}{}{\emailsymbol~\texttt{\scriptsize#5}\newline}%
     \ifthenelse{\equal{#6}{}}{}{\phonesymbol~#6}}
 
 % -- hide page numbering
@@ -72,5 +72,4 @@
 \fi
 
 % -- end file sty
-
 \endinput
