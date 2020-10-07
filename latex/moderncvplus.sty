@@ -62,7 +62,8 @@
     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
     \ifthenelse{\equal{#5}{}}{}{\emailsymbol~\texttt{\scriptsize#5}\newline}%
-    \ifthenelse{\equal{#6}{}}{}{\phonesymbol~#6}}
+    \ifthenelse{\equal{#6}{}}{}{\linkedinsocialsymbol~\protect\httplink[#6]{www.linkedin.com/in/#6}}
+}
 
 % -- hide page numbering
 \if@nopage 

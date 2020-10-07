@@ -22,7 +22,7 @@ Enjoy!
     {institution}
     {address}
     {email}
-    {phone}
+    {linkedin}
 
 ```   
    
